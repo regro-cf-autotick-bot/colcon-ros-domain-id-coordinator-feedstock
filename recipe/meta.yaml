@@ -1,13 +1,13 @@
 {% set name = "colcon-ros-domain-id-coordinator" %}
-{% set version = "0.2.4" %}
+{% set version = "0.2.5" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/colcon-ros-domain-id-coordinator-{{ version }}.tar.gz
-  sha256: cb5ec4ff564f15863b20dba0e58d686e5675e0ea75f5a4e0261683cba29018ed
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 74a3e2b972b3795fb961693e1166e7f761a482778800ca76778b207f76ac8f19
 
 build:
   noarch: python
